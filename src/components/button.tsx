@@ -12,6 +12,7 @@ function Primary({
   icon: Icon,
   iconPosition = "right",
   className,
+  ...props
 }: ButtonProps) {
   return (
     <button
@@ -20,6 +21,7 @@ function Primary({
         iconPosition === "right" ? "flex-row" : "flex-row-reverse",
         className
       )}
+      {...props}
     >
       <span className="text-xl font-semibold tracking-[0.02em] text-white">
         {buttonText}
@@ -29,8 +31,33 @@ function Primary({
   );
 }
 
+function Tertiary({
+  buttonText,
+  icon: Icon,
+  iconPosition = "right",
+  className,
+  ...props
+}: ButtonProps) {
+  return (
+    <button
+      className={clsx(
+        "inline-flex w-max items-center justify-center gap-3",
+        iconPosition === "right" ? "flex-row" : "flex-row-reverse",
+        className
+      )}
+      {...props}
+    >
+      <span className="text-xl font-semibold tracking-[0.02em] text-black">
+        {buttonText}
+      </span>
+      {Icon}
+    </button>
+  );
+}
+
 const Button = {
   Primary,
+  Tertiary,
 };
 
 export default Button;
