@@ -1,5 +1,6 @@
 import { DMSerifDisplay, jost } from "@/config/fonts";
 import "./globals.css";
+import Header from "@/components/header";
 
 export const metadata = {
   title: "Create Next App",
@@ -13,7 +14,10 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en" className={`${DMSerifDisplay.variable} ${jost.variable}`}>
-      <body>{children}</body>
+      <body className="bg-white">
+        <Header />
+        {children}
+      </body>
     </html>
   );
 }
