@@ -1,5 +1,12 @@
-import { PropsWithChildren } from "react";
+import { ComponentPropsWithoutRef, PropsWithChildren } from "react";
 
-export default function Container({ children }: PropsWithChildren) {
-  return <div className="mx-auto max-w-[1200px]">{children}</div>;
+export default function Container({
+  children,
+  ...props
+}: PropsWithChildren & ComponentPropsWithoutRef<"div">) {
+  return (
+    <div className="mx-auto max-w-[1200px]" {...props}>
+      {children}
+    </div>
+  );
 }

@@ -1,6 +1,7 @@
 import { DMSerifDisplay, jost } from "@/config/fonts";
 import "./globals.css";
 import Header from "@/components/header";
+import Footer from "@/components/footer";
 
 export const metadata = {
   title: "Create Next App",
@@ -17,6 +18,7 @@ export default function RootLayout({
       <body className="bg-white text-black">
         <Header />
         {children}
+        <Footer />
       </body>
     </html>
   );
