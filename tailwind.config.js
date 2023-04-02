@@ -12,6 +12,9 @@ module.exports = {
           ...defaultTheme.fontFamily.serif,
         ],
       },
+      dropShadow: {
+        btn: "0 10px 20px rgba(192, 192, 192, 1)",
+      },
     },
     fontSize: {
       sm: ["18px", 1.5],

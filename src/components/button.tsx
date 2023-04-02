@@ -17,7 +17,7 @@ function Primary({
   return (
     <button
       className={clsx(
-        "inline-flex w-max items-center justify-center gap-[10px] rounded-[18px] bg-black px-14 py-7",
+        "relative z-10 inline-flex w-max items-center justify-center gap-[10px] rounded-[18px] bg-black px-14 py-7 drop-shadow-btn",
         iconPosition === "right" ? "flex-row" : "flex-row-reverse",
         className
       )}
