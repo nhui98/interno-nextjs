@@ -17,6 +17,7 @@ module.exports = {
       },
       dropShadow: {
         btn: "0 10px 20px rgba(192, 192, 192, 1)",
+        "btn-secondary": "0 10px 20px rgba(31, 32, 32, 1)",
       },
     },
     fontSize: {
