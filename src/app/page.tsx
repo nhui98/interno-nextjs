@@ -1,5 +1,6 @@
 import AboutUs from "@/components/home/about-us";
 import Banner from "@/components/home/banner";
+import Blog from "@/components/home/blog";
 import Clients from "@/components/home/clients";
 import Counter from "@/components/home/counter";
 import Projects from "@/components/home/projects";
@@ -16,6 +17,7 @@ export default function Home() {
       <Clients />
       <Projects />
       <Counter />
+      <Blog />
     </main>
   );
 }
