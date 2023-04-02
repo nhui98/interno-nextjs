@@ -14,7 +14,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en" className={`${DMSerifDisplay.variable} ${jost.variable}`}>
-      <body className="bg-white">
+      <body className="bg-white text-black">
         <Header />
         {children}
       </body>

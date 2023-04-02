@@ -1,3 +1,9 @@
+import Banner from "@/components/home/banner";
+
 export default function Home() {
-  return <main className="text-sm">hello world</main>;
+  return (
+    <main>
+      <Banner />
+    </main>
+  );
 }
