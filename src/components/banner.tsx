@@ -8,7 +8,7 @@ type BannerProps = {
 
 export default function Banner({ image, subtitle, title }: BannerProps) {
   return (
-    <section className="relative">
+    <section className="relative mx-auto max-w-[1920px]">
       <Image src={image} alt={title} />
       <div className="absolute bottom-0 flex w-full flex-col items-center">
         <div className="w-[500px] rounded-t-[37px] bg-white py-10">
