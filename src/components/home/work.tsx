@@ -1,3 +1,4 @@
+import { InfoCard } from "../InfoCard";
 import Button from "../button";
 import Container from "../container";
 import { ArrowRightIcon } from "../icons/arrow";
@@ -44,21 +45,7 @@ export default function Work() {
       <Container>
         <div className="grid grid-cols-3">
           {workDetails.map((work) => (
-            <article
-              key={work.title}
-              className="flex flex-col items-center gap-y-14 px-5"
-            >
-              <div className="flex flex-col gap-y-5">
-                <h3 className="text-center font-serif text-4xl">
-                  {work.title}
-                </h3>
-                <p className="text-center text-lg tracking-[0.01em]">
-                  {work.description}
-                </p>
-              </div>
-
-              {work.button}
-            </article>
+            <InfoCard key={work.title} {...work} />
           ))}
         </div>
       </Container>
