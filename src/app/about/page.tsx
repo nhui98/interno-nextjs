@@ -4,6 +4,7 @@ import Quote from "@/components/about/quote";
 import WhatWeDo from "@/components/about/what-we-do";
 import Result from "@/components/about/results";
 import Team from "@/components/about/team";
+import MailBox from "@/components/about/mail-box";
 
 export default function Page() {
   return (
@@ -13,6 +14,7 @@ export default function Page() {
       <WhatWeDo />
       <Result />
       <Team />
+      <MailBox />
     </main>
   );
 }
