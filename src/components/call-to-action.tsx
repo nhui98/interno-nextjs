@@ -1,8 +1,8 @@
-import Button from "../button";
-import Container from "../container";
-import { ArrowRightIcon } from "../icons/arrow";
+import Button from "./button";
+import Container from "./container";
+import { ArrowRightIcon } from "./icons/arrow";
 
-export default function Contact() {
+export default function CallToAction() {
   return (
     <section className="mt-52">
       <Container>
