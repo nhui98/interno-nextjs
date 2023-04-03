@@ -8,7 +8,7 @@ import Projects from "@/components/home/projects";
 import Testimonials from "@/components/home/testimonials";
 import Work from "@/components/home/work";
 
-export default function Home() {
+export default function Page() {
   return (
     <main>
       <Banner />
