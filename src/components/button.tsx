@@ -17,7 +17,7 @@ function Primary({
   return (
     <button
       className={clsx(
-        "relative z-10 inline-flex w-max items-center justify-center gap-[10px] rounded-[18px] bg-black px-14 py-7 drop-shadow-btn",
+        "relative z-10 inline-flex w-max items-center justify-center gap-[10px] rounded-[18px] bg-black px-14 py-7",
         iconPosition === "right" ? "flex-row" : "flex-row-reverse",
         className
       )}
@@ -41,7 +41,7 @@ function Secondary({
   return (
     <button
       className={clsx(
-        "relative z-10 inline-flex w-max items-center justify-center gap-[10px] rounded-[18px] bg-brown px-14 py-7 drop-shadow-btn-secondary",
+        "relative z-10 inline-flex w-max items-center justify-center gap-[10px] rounded-[18px] bg-brown px-14 py-7",
         iconPosition === "right" ? "flex-row" : "flex-row-reverse",
         className
       )}
